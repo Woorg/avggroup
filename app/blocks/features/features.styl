@@ -1,2 +1,26 @@
 .features
 	display block
+	padding-bottom 60px
+	&__in
+		@extends .in
+		text-align center
+	&__w
+		position relative
+		margin-right 36px
+		display inline-block
+		vertical-align top
+		color #115AA5
+		text-align center
+		&:before
+			position absolute
+			content ""
+			top 0
+			left -100px
+			svgSize($diagnostics-icon)
+			background url('../images/diagnostics-icon.svg') 0 0 no-repeat
+	&__title
+		font-size 36px
+	&__note
+		font-size 16px
+	// &__button
+

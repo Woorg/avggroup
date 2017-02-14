@@ -1,0 +1,30 @@
+.manufacturer
+	display block
+	&__list
+		padding-left 40px
+		padding-right 40px
+		font-size 0
+	&__item
+		margin-right 50px
+		display inline-block
+		vertical-align middle
+		&:last-child
+			margin-right 0
+	&__brand
+		hide-text()
+	&__item_1
+		.manufacturer__brand
+			svgSize($manufacturer-1)
+			background url('../images/manufacturer-1.svg') 0 0 no-repeat
+	&__item_2
+		.manufacturer__brand
+			svgSize($manufacturer-2)
+			background url('../images/manufacturer-2.svg') 0 0 no-repeat
+	&__item_3
+		.manufacturer__brand
+			svgSize($manufacturer-3)
+			background url('../images/manufacturer-3.svg') 0 0 no-repeat
+	&__item_4
+		.manufacturer__brand
+			svgSize($manufacturer-4)
+			background url('../images/manufacturer-4.svg') 0 0 no-repeat

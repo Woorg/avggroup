@@ -1,3 +1,9 @@
+include ../form/form
+
 mixin questions()
-	+b.questions&attributes(attributes)
-		block
+	section.questions
+		.questions__in
+			h2.questions__title Остались вопросы? Напишите нам!
+			p.questions__text С удовольствие ответим
+
+			+form()

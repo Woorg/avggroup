@@ -1,2 +1,82 @@
 .header
 	display block
+	background #FFF
+	&__in
+		@extends .in_second
+		padding-top 13px
+		padding-bottom 13px
+		clearfix()
+	&__logo
+		float left
+	&__right
+		float right
+		width 900px
+		font-size 0
+		text-align right
+	&__nav,
+	&__location,
+	&__phone
+		display inline-block
+		vertical-align top
+	&__nav
+		margin-top 4px
+		margin-right 50px
+	&__location
+		margin-right 50px
+
+	// &__phone
+
+.logo
+	svgSize($logo)
+	background url('../images/logo.svg') 0 0 no-repeat
+	hide-text()
+.nav
+	color #5C5C5C
+	&__list
+		font-size 0
+	&__item
+		margin-right 30px
+		display inline-block
+		vertical-align top
+		font-family $fSet
+		font-weight normal
+		font-size 15px
+		&:last-child
+			margin-right 0
+	&__link
+		color inherit
+		text-decoration none
+		transition color .3s ease
+		&:hover
+			color darken(#5C5C5C, 40)
+.location
+	position relative
+	padding-left 30px
+	font-family $fSet
+	font-weight normal
+	font-size 15px
+	&:after
+		position absolute
+		content ""
+		top 50%
+		left 0
+		margin-top -14px
+		svgSize($map-icon)
+		height 29px
+		background url('../images/map-icon.svg') 0 0 no-repeat
+
+.phone
+	position relative
+	padding-left 40px
+	font-family $fSet
+	font-weight bold
+	font-size 20px
+	color #115AA5
+	&:after
+		position absolute
+		content ""
+		top 50%
+		left 0
+		margin-top -16px
+		svgSize($phone-icon)
+		background url('../images/phone-icon.svg') 0 0 no-repeat

@@ -1,4 +1,4 @@
-<svg id="service-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="398" height="290" viewBox="0 0 398 290">
+<svg id="diagnostics-icon" xmlns="http://www.w3.org/2000/svg" width="66" height="76" viewBox="0 0 66 76">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,7 +30,7 @@
 <defs>
     <style>
       .cls-1 {
-        fill: #e1631d;
+        fill: #ededed;
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4 {
@@ -38,7 +38,7 @@
       }
 
       .cls-2 {
-        fill: #283259;
+        fill: #509ceb;
       }
 
       .cls-3 {
@@ -46,13 +46,21 @@
       }
 
       .cls-4 {
-        fill: #0351a1;
+        fill: #ecb81f;
       }
     </style>
   </defs>
-  <path id="Слой_88" data-name="Слой 88" class="cls-1" d="M232,2476l241,241H169V2541Z" transform="translate(-75.5 -2427)"/>
-  <path id="Слой_89" data-name="Слой 89" class="cls-2" d="M83.822,2546c30.18,35.78,47.866,68.02,47,95v76h55v-76c-0.152-40.09,12.8-72.9,36-100Z" transform="translate(-75.5 -2427)"/>
-  <path id="Слой_90" data-name="Слой 90" class="cls-3" d="M176.822,2436c-1.606-9.83,2.7-10.68,10-7,23.277,15.79,49.474,47.9,52,70,6.965,60.93-92.574,91.65-145,57-19.154-12.66-25.414-40.36-6-98,5.633-13.4,10.455-16.11,14-2l14,51c8.566,30.27,85.626,10.15,74-24Z" transform="translate(-75.5 -2427)"/>
-  <path id="Слой_91" data-name="Слой 91" class="cls-4" d="M176,2622.5a18,18,0,0,0-18-18h0a18,18,0,0,0-18,18V2717h36v-94.5Z" transform="translate(-75.5 -2427)"/>
-  <image id="Слой_92" data-name="Слой 92" x="73.5" y="195" width="19" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAZCAMAAADkFeWYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABR1BMVEUAAACDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseGDseEAAABmQOXiAAAAa3RSTlMAS1ECE9qmBh2k7hW9EVOY2CkBzezX9FiSF6mUqxivPspx/PGIGSv53dLyC477eB7z/oUFp8OaBChVRhY3O1RQwuAJsf27rJMPGyzfh0p2sA2K3JvnT9RE7+GE1aEfx+hdi8b6fsw1ZYNeIeiE9B8AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QINFQ0WwvFDvQAAAQhJREFUGNOl0EdTAkEQBeCHqIB5VzHrmmVhURGzmFFRzDnn/P7/3Z7ZWeFuH7qmvuqZ6XpAqCKMsqpUrYrVkT+JxmpqtbGuPrAGstE3NlnG7Ga22MriZGubwXayQ1lnl4x292jrJR1lfXb/ADk4NAyMjJKWNsBJyCgTrrRkxBhSXpp+jSEwYNybEMlMZuU8NT1j/pydm19YxH/LyZXnsrS8In2Va+sl22ASyOa5qVfZ2i4EtkN6ynbJYs6YRe4p25eF0wfhQ2VHZFwSwzHzJ2TsVBnOyHMbqQtmLq/Ia203cun2rki6uH9QuYgVHk0gT7LEs2+Ivih5fVOvIuS++3l8fH59/5T2/gVP8kONHXIffAAAAABJRU5ErkJggg=="/>
+  <path id="Слой_25" data-name="Слой 25" class="cls-1" d="M636.5,1914.85c17.661,0,32,2.11,32,4.71s-14.339,4.7-32,4.7-32-2.11-32-4.7S618.839,1914.85,636.5,1914.85Z" transform="translate(-603.5 -1849.125)"/>
+  <g id="Слой_37" data-name="Слой 37">
+    <g id="Слой_31" data-name="Слой 31">
+      <path id="Слой_28" data-name="Слой 28" class="cls-2" d="M645.98,1850.94H627.156l3.765,38.59h11.294Z" transform="translate(-603.5 -1849.125)"/>
+      <path id="Слой_29" data-name="Слой 29" class="cls-3" d="M645.039,1850H626.215l3.765,38.59h11.294Z" transform="translate(-603.5 -1849.125)"/>
+      <path id="Слой_30" data-name="Слой 30" class="cls-4" d="M643.156,1851.88H628.1l3.764,34.83h7.53Z" transform="translate(-603.5 -1849.125)"/>
+    </g>
+    <g id="Слой_36" data-name="Слой 36">
+      <path id="Слой_33" data-name="Слой 33" class="cls-2" d="M642.215,1894.23H630.921v11.3h11.294v-11.3Z" transform="translate(-603.5 -1849.125)"/>
+      <path id="Слой_34" data-name="Слой 34" class="cls-3" d="M641.274,1893.29H629.98v11.3h11.294v-11.3Z" transform="translate(-603.5 -1849.125)"/>
+      <path id="Слой_35" data-name="Слой 35" class="cls-4" d="M639.392,1895.18h-7.53v7.53h7.53v-7.53Z" transform="translate(-603.5 -1849.125)"/>
+    </g>
+  </g>
 </svg>

@@ -1,2 +1,57 @@
 .types
 	display block
+	&__in
+		@extends .in
+		padding-top 60px
+		padding-bottom 60px
+	&__title
+		@extends .title
+		margin-bottom 48px
+	&__w
+		clearfix()
+
+	&__type
+		position relative
+		margin-bottom 74px
+		padding-top 100px
+		display inline-block
+		vertical-align top
+		width 360px
+		&:after
+			position absolute
+			content ""
+			top 0
+			left 0
+
+	&__type_thermal
+		&:after
+			sprite($type_1)
+	&__type_refrigeration
+		&:after
+			svgSize($type-2)
+			background url('../images/type-2.svg') 0 0 no-repeat
+	&__type_bakery
+		&:after
+			sprite($type_3)
+	&__type_electro
+		&:after
+			svgSize($type-4)
+			background url('../images/type-4.svg') 0 0 no-repeat
+	&__type_washer
+		&:after
+			svgSize($type-5)
+			background url('../images/type-5.svg') 0 0 no-repeat
+	&__type-title
+		margin-bottom 10px
+		font-size 18px
+		font-weight bold
+	// &__list
+	&__item
+		position relative
+		margin-bottom 5px
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ''
+
