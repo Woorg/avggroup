@@ -2,27 +2,30 @@
 	display block
 	&__in
 		@extends .in
-		padding-top 60px
-		padding-bottom 60px
+		padding-top 53px
+		padding-bottom 8px
 	&__title
 		@extends .title
 		margin-bottom 48px
 	&__w
+		font-size 0
 		clearfix()
-
 	&__type
 		position relative
+		margin-right ratio-percentage(30,1140)
 		margin-bottom 74px
-		padding-top 100px
+		padding-top 90px
 		display inline-block
 		vertical-align top
-		width 360px
+		width ratio-percentage(360,1140)
+		&:nth-child(3n)
+			margin-right 0
+
 		&:after
 			position absolute
 			content ""
 			top 0
 			left 0
-
 	&__type_thermal
 		&:after
 			sprite($type_1)
@@ -42,13 +45,14 @@
 			svgSize($type-5)
 			background url('../images/type-5.svg') 0 0 no-repeat
 	&__type-title
-		margin-bottom 10px
+		margin-bottom 6px
 		font-size 18px
 		font-weight bold
 	// &__list
 	&__item
 		position relative
-		margin-bottom 5px
+		margin-bottom 3px
+		font-size 14px
 		&:before
 			position absolute
 			top 0

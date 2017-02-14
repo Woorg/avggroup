@@ -1,2 +1,17 @@
 .footer
 	display block
+	&__in
+		@extends .in
+		padding-top 12px
+		padding-bottom 12px
+		clearfix()
+	&__created-by
+		float right
+		font-size 12px
+		span
+			display inline-block
+			vertical-align top
+			width 67px
+			height 17px
+			background url('../images/created-by.svg') 0 0 no-repeat
+			hide-text()

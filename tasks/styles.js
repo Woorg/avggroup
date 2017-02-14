@@ -9,6 +9,7 @@ import autoprefixer from 'autoprefixer-stylus';
 import gcmq from 'gulp-group-css-media-queries';
 import nano from 'gulp-cssnano';
 import rename from 'gulp-rename';
+import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
 import errorHandler from 'gulp-plumber-error-handler';
 
@@ -28,6 +29,7 @@ gulp.task('styles', () => (
 		}))
 		.pipe(gulpIf(!isDebug, gcmq()))
 		.pipe(gulpIf(!isDebug, nano({zindex: false})))
+		// .pipe(gulpIf(!isDebug, postcss([])))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulpIf(isDebug, sourcemaps.write()))
 		.pipe(gulp.dest('dist/assets/styles'))

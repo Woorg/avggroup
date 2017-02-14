@@ -1,8 +1,15 @@
 .manufacturer
+	padding-top 65px
+	padding-bottom 65px
 	display block
+	background-color #ececec
+	&__in
+		@extends .in
+		margin auto
 	&__list
-		padding-left 40px
-		padding-right 40px
+		position relative
+		padding-left 90px
+		padding-right 48px
 		font-size 0
 	&__item
 		margin-right 50px
@@ -28,3 +35,21 @@
 		.manufacturer__brand
 			svgSize($manufacturer-4)
 			background url('../images/manufacturer-4.svg') 0 0 no-repeat
+
+	&__list-arrow
+		position absolute
+		top 50%
+		content ""
+		margin-top -48px
+		svgSize($arrow-back)
+		hide-text()
+	&__list-arrow_back
+		left 0
+		svgSize($arrow-back)
+		background url('../images/arrow-back.svg') 0 0 no-repeat
+	&__list-arrow_next
+		right 0
+		svgSize($arrow-next)
+		background url('../images/arrow-next.svg') 0 0 no-repeat
+
+

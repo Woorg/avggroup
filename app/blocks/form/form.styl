@@ -1,2 +1,44 @@
 .form
+	margin auto
+	padding 15px
 	display block
+	width ratio-percentage(920,1140)
+	min-height 360px
+	background-color #1b6ec4
+	color #626262
+	&__w
+		padding-top 57px
+		padding-right 65px
+		padding-bottom 65px
+		width 100% // 890
+		min-height 330px
+		clearfix()
+		background-color #d8e4ef
+	&__text
+		margin-top 48px
+		margin-left 85px
+		float left
+		width 11.375rem
+		font-size 24px
+	&__form
+		float right
+		width 22.5rem
+	&__note
+		margin-bottom 7px
+		font-size 12px
+	&__field
+		margin-bottom 20px
+	&__field_submit
+		text-align right
+	&__input
+		border none
+		padding 14px 16px 12px
+		width 100%
+		background #FFF
+		font-size 18px
+		color #626262
+		+placeholder()
+			color #626262
+	&__submit
+		border none
+		@extends .button

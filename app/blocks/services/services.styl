@@ -1,2 +1,74 @@
 .services
+	margin-bottom 60px
 	display block
+	overflow hidden
+	&__in
+		padding-top 50px
+		padding-bottom 18px
+		@extends .in
+	&__list
+		font-size 0
+	&__item
+		position relative
+		display inline-block
+		vertical-align top
+		width ratio-percentage(960,1920)
+		height 26.25rem // 420
+		color #FFF
+		+below(1240px)
+			width 100%
+		&:after
+			position absolute
+			bottom 0
+			left 0
+			content ""
+	&__w
+		position relative
+		z-index 1
+		margin-top remify(120px)
+		margin-right remify(220px)
+		margin-bottom remify(130px)
+		margin-left remify(420px)
+		width ratio-percentage(312,960)
+		text-align left
+
+	&__item_1
+		background-color #ec681f
+		&:after
+			left 4.75rem
+			width 24.8125rem
+			height 18.125rem
+			background url('../images/service-1.png') 0 0 no-repeat
+	&__item_2
+		background-color #005ab7
+		&:after
+			left 4.5rem
+			width 18.4375rem
+			height 21.25rem
+			background url('../images/service-2.svg') 0 0 no-repeat
+	&__item_3
+		background-color #283259
+		&:after
+			left 2.3125rem
+			width 27.1875rem
+			height 18.4375rem
+			background url('../images/service-3.svg') 0 0 no-repeat
+	&__item_4
+		background-color #83b1e1
+		&:after
+			left 92px
+			width 16.9375rem
+			height 23rem
+			background url('../images/service-4.svg') 0 0 no-repeat
+	&__title
+		margin-bottom 30px
+		font-weight bold
+		font-size 24px
+	&__text
+		margin-bottom 23px
+		font-size 14px
+	&__price
+		font-size 14px
+		span
+			font-weight bold
+			font-size 24px

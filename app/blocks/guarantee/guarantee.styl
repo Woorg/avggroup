@@ -1,2 +1,46 @@
 .guarantee
 	display block
+	&__in
+		@extends .in
+	&__title
+		margin-bottom 60px
+	&__list
+		font-size 0
+	&__item
+		position relative
+		width ratio-percentage(360,1140)
+		margin-right 30px
+		margin-bottom 60px
+		padding-top 80px
+		display inline-block
+		vertical-align top
+		&:nth-child(3n)
+			margin-right 0
+		&:after
+			position absolute
+			top 0
+			left 0
+			content ""
+	&__item_1
+		&:after
+			sprite($service_1)
+	&__item_2
+		&:after
+			sprite($service_2)
+	&__item_3
+		&:after
+			sprite($service_3)
+	&__item_4
+		&:after
+			sprite($service_4)
+	&__item_5
+		&:after
+			sprite($service_5)
+	&__item-title
+		margin-bottom 27px
+		font-size 18px
+		font-weight bold
+	&__item-text
+		font-size 14px
+		line-height 21px
+

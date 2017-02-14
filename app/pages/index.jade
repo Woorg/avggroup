@@ -6,9 +6,11 @@ include /blocks/hero/hero
 include /blocks/types/types
 include /blocks/features/features
 include /blocks/manufacturer/manufacturer
-//- include /blocks/header/header
-//- include /blocks/header/header
-//- include /blocks/header/header
+include /blocks/services/services
+include /blocks/objects/objects
+include /blocks/guarantee/guarantee
+include /blocks/questions/questions
+
 include /blocks/footer/footer
 
 
@@ -19,9 +21,15 @@ block head
 block content
 	+header()
 	+hero()
-	+types()
+	+types()#types
 	+features()
 	+manufacturer()
+	+services()
+	+features-second()
+	+objects()
+	+features-third()
+	+guarantee()
+	+questions()
 
 	+footer()
 

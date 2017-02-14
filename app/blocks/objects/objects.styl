@@ -1,2 +1,30 @@
 .objects
 	display block
+	&__in
+		@extends .in
+	&__title
+		margin-bottom 15px
+	&__list
+		font-size 0
+	&__item
+		margin-right 30px
+		margin-bottom 67px
+		display inline-block
+		vertical-align top
+		width ratio-percentage(360,1140)
+		&:nth-child(3n)
+			margin-right 0
+	&__img
+		margin-bottom 38px
+		img
+			display block
+			max-width 100%
+			height auto
+	&__item-title
+		margin-bottom 20px
+		font-size 18px
+		font-weight bold
+	&__text
+		font-size 14px
+		line-height 21px
+
