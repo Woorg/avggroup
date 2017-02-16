@@ -6,23 +6,38 @@
 	min-height 360px
 	background-color #1b6ec4
 	color #626262
+	+below(760px)
+		width 100%
 	&__w
 		padding-top 57px
-		padding-right 65px
+		padding-right ratio-percentage(65,920)
 		padding-bottom 65px
 		width 100% // 890
 		min-height 330px
 		clearfix()
 		background-color #d8e4ef
+		+below(1000px)
+			padding-right 15px
+
 	&__text
 		margin-top 48px
 		margin-left 85px
 		float left
 		width 11.375rem
 		font-size 24px
+		+below(1000px)
+			margin-left 15px
+			font-size 20px
+		+below(790px)
+			display none
 	&__form
 		float right
 		width 22.5rem
+		+below(760px)
+			width 300px
+		+below(790px)
+			padding-left 15px
+			width 100%
 	&__note
 		margin-bottom 7px
 		font-size 12px

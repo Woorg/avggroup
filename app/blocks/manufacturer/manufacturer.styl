@@ -9,15 +9,24 @@
 	&__list
 		position relative
 		padding-left 90px
-		padding-right 48px
+		padding-right 60px
 		font-size 0
+		+below(500px)
+			padding-left 48px
+			padding-right 48px
 	&__item
-		margin-right 50px
+		position relative
+		// margin-right 50px
 		display inline-block
 		vertical-align middle
-		&:last-child
-			margin-right 0
+		min-height 60px
+		// &:last-child
+		// 	margin-right 0
 	&__brand
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
 		hide-text()
 	&__item_1
 		.manufacturer__brand
@@ -36,20 +45,23 @@
 			svgSize($manufacturer-4)
 			background url('../images/manufacturer-4.svg') 0 0 no-repeat
 
-	&__list-arrow
+	.slick-slide
+		min-height 80px
+	.slick-arrow
 		position absolute
 		top 50%
 		content ""
-		margin-top -48px
+		// margin-top -48px
 		svgSize($arrow-back)
 		hide-text()
-	&__list-arrow_back
+	.slick-prev
 		left 0
 		svgSize($arrow-back)
 		background url('../images/arrow-back.svg') 0 0 no-repeat
-	&__list-arrow_next
+	.slick-next
 		right 0
 		svgSize($arrow-next)
 		background url('../images/arrow-next.svg') 0 0 no-repeat
+
 
 

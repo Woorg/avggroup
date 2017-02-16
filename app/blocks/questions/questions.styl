@@ -2,14 +2,24 @@
 	min-height remify(900px)
 	display block
 	background #005ab7 url('../images/questions.svg') 50% 100% no-repeat
+	+below(400px)
+		min-height remify(600px)
 	&__in
 		@extends .in
 		padding-top 75px
 		padding-bottom 316px
 		color #FFF
+		+below(400px)
+			padding-bottom 116px
 	&__title
 		font-size 48px
 		text-align center
+		+below(790px)
+			font-size 40px
+		+below(600px)
+			font-size 33px
+		+below(400px)
+			font-size 27px
 	&__text
 		margin-bottom 60px
 		font-size 24px

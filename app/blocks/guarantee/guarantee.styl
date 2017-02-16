@@ -9,12 +9,15 @@
 	&__item
 		position relative
 		width ratio-percentage(360,1140)
-		margin-right 30px
+		margin-right ratio-percentage(30,1140)
 		margin-bottom 60px
 		padding-top 80px
 		display inline-block
 		vertical-align top
 		&:nth-child(3n)
+			margin-right 0
+		+below(760px)
+			width 100%
 			margin-right 0
 		&:after
 			position absolute

@@ -3,12 +3,13 @@ mixin form()
 		.form__w
 			.form__text Вызвать мастера. Это бесплатно!
 
-			form.form__form(action="", method="post")
-				p.form__note Ваше данные не будут переданы третьим лицам!
-				.form__field
-					input.form__input(type="text", value="", placeholder="Ваше имя", name="name")
-				.form__field
-					input.form__input(type="text", value="", placeholder="Ваш телефон", name="phone")
-				.form__field_submit
-					input.form__submit(type="submit", value="Вызвать мастера")
+			.form__form
+				form(action="", method="post")
+					p.form__note Ваше данные не будут переданы третьим лицам!
+					.form__field
+						input.form__input(type="text", value="", placeholder="Ваше имя", name="name" required)
+					.form__field
+						input.form__input.form__input_phone(type="text", value="", placeholder="Ваш телефон", name="phone" required)
+					.form__field_submit
+						input.form__submit(type="submit", value="Вызвать мастера")
 

@@ -1,22 +1,31 @@
 .hero
 	display block
-	min-height 850px
+	min-height 750px
 	background-color #005ab7
+	overflow hidden
+	+below(800px)
+		min-height 720px
+	+below(700px)
+		min-height auto
 	&__in
 		@extends .in
-		padding-top 248px
-		padding-bottom 95px
+		// padding-top 248px
+		// padding-bottom 95px
 		font-family $ptS
 		clearfix()
 	&__w
 		width ratio-percentage(486,1140)
 		float left
+		+below(700px)
+			width 100%
 	&__img
 		margin-top remify(-85px)
 		float right
 		width ratio-percentage(650,1140)
 		height remify(592px)
 		background url('../images/hero-img.png') 0 0 / cover no-repeat
+		+below(700px)
+			display none
 	&__title
 		margin-bottom 13px
 		font-size 48px
@@ -25,6 +34,8 @@
 	&__services
 		margin-bottom 76px
 		font-size 0
+		+below(700px)
+			margin-bottom 46px
 	&__item
 		position relative
 		margin-right 5px
@@ -52,11 +63,19 @@
 				display none
 	&__call
 		margin-bottom 70px
+		+below(700px)
+			margin-bottom 30px
 	&__note
 		color #87B4E3
 		line-height 17px
-// .slider
-// 	&__item
+.slider
+	&__item
+		padding-top 148px
+		padding-bottom 95px
+		+below(800px)
+			padding-top 120px
+		+below(700px)
+			padding-top 50px
 
 
 .call

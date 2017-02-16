@@ -10,8 +10,11 @@
 		font-size 0
 	&__item
 		position relative
-		display inline-block
-		vertical-align top
+		display table
+		table-layout fixed
+		// vertical-align middle
+		float left
+		// vertical-align top
 		width ratio-percentage(960,1920)
 		height 26.25rem // 420
 		color #FFF
@@ -25,12 +28,27 @@
 	&__w
 		position relative
 		z-index 1
-		margin-top remify(120px)
-		margin-right remify(220px)
-		margin-bottom remify(130px)
-		margin-left remify(420px)
-		width ratio-percentage(312,960)
+		width 100%
+		display table-cell
+		vertical-align middle
+		// margin-top remify(120px)
+		// padding-right remify(220px)
+		padding-top 2%
+		padding-right 5%
+		padding-left 35%
+		padding-bottom 2%
+		// margin-bottom remify(130px)
+		// padding-left remify(420px)
+		// width ratio-percentage(312,960)
 		text-align left
+		+below(760px)
+			// margin-top remify(60px)
+			// margin-right remify(60px)
+			// margin-bottom remify(60px)
+			// margin-left 2.5rem
+			// width 80%
+			padding-right 20%
+			padding-left 20%
 
 	&__item_1
 		background-color #ec681f
@@ -39,6 +57,10 @@
 			width 24.8125rem
 			height 18.125rem
 			background url('../images/service-1.png') 0 0 no-repeat
+			+below(760px)
+				width 14.8125rem
+				height 8.125rem
+				background-size cover
 	&__item_2
 		background-color #005ab7
 		&:after
@@ -46,6 +68,12 @@
 			width 18.4375rem
 			height 21.25rem
 			background url('../images/service-2.svg') 0 0 no-repeat
+		+below(760px)
+			&:after
+				width 8.4375rem
+				height 10.25rem
+				background-size cover
+
 	&__item_3
 		background-color #283259
 		&:after
@@ -53,6 +81,10 @@
 			width 27.1875rem
 			height 18.4375rem
 			background url('../images/service-3.svg') 0 0 no-repeat
+			+below(760px)
+				width 17.1875rem
+				height 8.4375rem
+				background-size cover
 	&__item_4
 		background-color #83b1e1
 		&:after
@@ -60,6 +92,11 @@
 			width 16.9375rem
 			height 23rem
 			background url('../images/service-4.svg') 0 0 no-repeat
+			+below(760px)
+				width 6.9375rem
+				height 13rem
+				background-size cover
+
 	&__title
 		margin-bottom 30px
 		font-weight bold
@@ -68,6 +105,7 @@
 		margin-bottom 23px
 		font-size 14px
 	&__price
+		margin-top 23px
 		font-size 14px
 		span
 			font-weight bold

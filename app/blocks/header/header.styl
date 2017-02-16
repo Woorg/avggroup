@@ -1,8 +1,11 @@
 .header
 	display block
+	min-height 60px
 	background #FFF
 	&_scrolled
-		height 60px
+		min-height 60px
+	&__w
+		animation staticNav .2s ease
 	&__w_scrolled
 		position fixed
 		z-index 10
@@ -19,10 +22,14 @@
 	&__logo
 		float left
 	&__right
+		position relative
 		float right
 		// width 900px
 		font-size 0
 		text-align right
+		+below(800px)
+			margin-top 10px
+			width 100%
 	&__nav,
 	&__location,
 	&__phone
@@ -32,10 +39,33 @@
 		margin-top 10px
 		margin-right 60px
 	&__location
-		margin-top 10px
+		margin-top 4px
 		margin-right 45px
 	&__phone
 		margin-top 5px
+		position relative
+		padding-left 40px
+		font-family $fSet
+		font-weight bold
+		font-size 20px
+		color #115AA5
+		text-decoration none
+		transition color .3s ease
+		+below(550px)
+			margin-top 10px
+			padding-left 25px
+			font-size 13px
+		&:after
+			position absolute
+			content ""
+			top 50%
+			left 0
+			margin-top -16px
+			svgSize($phone-icon)
+			background url('../images/phone-icon.svg') 0 0 no-repeat
+
+		&:hover
+			color darken(#115AA5,10)
 
 .logo
 	svgSize($logo)
@@ -43,8 +73,12 @@
 	hide-text()
 .nav
 	color #5C5C5C
+	+below(350px)
+		margin-right 0
 	&__list
 		font-size 0
+		+below(1200px)
+			display none
 	&__item
 		margin-right 30px
 		display inline-block
@@ -54,18 +88,77 @@
 		font-size 15px
 		&:last-child
 			margin-right 0
+		a
+			color inherit
+			text-decoration none
+			transition color .3s ease
+			&:hover
+				color darken(#5C5C5C, 40)
 	&__link
 		color inherit
 		text-decoration none
 		transition color .3s ease
 		&:hover
 			color darken(#5C5C5C, 40)
+
+	&_toggled
+		position absolute
+		top 100%
+		z-index 1
+		left 0
+		right 0
+		margin-right 0
+		padding-top 20px
+		padding-left 20px
+		padding-right 20px
+		padding-bottom 10px
+		display block
+		width 100%
+		background #FFF
+		text-align left
+		.nav__item
+			margin-bottom 10px
+			margin-right 0
+			width 100%
+.menu-trigger
+	margin-top 4px
+	border none
+	display none
+	float left
+	font-family $fSet
+	font-size 15px
+	background #FFF
+	color #5C5C5C
+	svg
+		display inline-block
+		vertical-align middle
+		width 30px
+		height 30px
+		fill #2a6baf
+	span
+		margin-left 10px
+		display inline-block
+		vertical-align middle
+	&:hover
+		svg
+			fill darken(#2a6baf,10)
+	+below(1200px)
+		display block
+		.nav__list
+			display block
+
+
+
+
 .location
 	position relative
 	padding-left 30px
 	font-family $fSet
 	font-weight normal
 	font-size 15px
+	line-height 32px
+	+below(550px)
+		display none
 	&:after
 		position absolute
 		content ""
@@ -73,35 +166,20 @@
 		left 0
 		margin-top -14px
 		svgSize($map-icon)
-		height 29px
+		height 30px
 		background url('../images/map-icon.svg') 0 0 no-repeat
-
-.phone
-	position relative
-	padding-left 40px
-	font-family $fSet
-	font-weight bold
-	font-size 20px
-	color #115AA5
-	&:after
-		position absolute
-		content ""
-		top 50%
-		left 0
-		margin-top -16px
-		svgSize($phone-icon)
-		background url('../images/phone-icon.svg') 0 0 no-repeat
-
-
-
 
 
 @keyframes fixedNav
 	0%
-		opacity .4
 		transform translateY(-20%)
 	100%
-		opacity 1
+		transform translateY(0%)
+
+@keyframes staticNav
+	0%
+		transform translateY(20%)
+	100%
 		transform translateY(0%)
 
 

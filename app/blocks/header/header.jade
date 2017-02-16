@@ -4,6 +4,9 @@ mixin header()
 			.header__in
 				a.header__logo.logo(href="#top") Avgroup
 				.header__right
+					button.menu-trigger
+						+icon("menu-lines")
+						| <span>Меню</span>
 					nav.header__nav.nav
 						ul.nav__list
 							li.nav__item
@@ -15,5 +18,5 @@ mixin header()
 							li.nav__item
 								a.nav__link(href="#guarantee") Сервис и гарантии
 					.header__location.location Сочи
-					.header__phone.phone +7 (928) 8463678
+					a.header__phone(href='tel:+79288463678') +7 (928) 8463678
 
